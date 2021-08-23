@@ -31,9 +31,9 @@ class ViewController: UIViewController {
             alpha: 1
         )
         
-        redLabelValue.text = String(redSlider.value)
-        greenLabelValue.text = String(greenSlider.value)
-        blueLabelValue.text = String(blueSlider.value)
+        redLabelValue.text = String(format: "%.2f", redSlider.value)
+        greenLabelValue.text = String(format: "%.2f",greenSlider.value)
+        blueLabelValue.text = String(format: "%.2f",blueSlider.value)
     }
 
     @IBAction func redSliderAction() {
